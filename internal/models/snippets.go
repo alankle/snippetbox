@@ -8,8 +8,8 @@ import (
 
 type Snippet struct {
 	ID      int
-	Title   string
-	Content string
+	Title   sql.NullString
+	Content sql.NullString
 	Created time.Time
 	Expires time.Time
 }
